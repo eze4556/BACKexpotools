@@ -100,7 +100,7 @@ exports.updateProducto = async (req, res) => {
     if (req.body.nombre !== undefined) {
       producto.nombre = req.body.nombre;
     }
-    if (req.body.precioDsitribuidor !== undefined) {
+    if (req.body.precioDistribuidor !== undefined) {
       producto.precioDistribuidor = req.body.precioDistribuidor;
     }
     if (req.body.precio !== undefined) {

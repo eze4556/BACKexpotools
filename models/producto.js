@@ -11,7 +11,7 @@ const productoSchema = new mongoose.Schema({
   precioDistribuidor: { type: Number},
    etiqueta: {type:String},
   categorias: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Categoria' }], // Referencia a la categoría
-// marca: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Marca' }]
+
 
 
 });

@@ -13,6 +13,7 @@ exports.createSomos = async (req, res) => {
     await nuevoSomos.save();
     res.status(201).json({ message: 'Quien Somos agregado exitosamente' });
   } catch (error) {
+     console.error('Error al crear Quienes Somos:', error);
     res.status(500).json({ error: error.message });
   }
 };
